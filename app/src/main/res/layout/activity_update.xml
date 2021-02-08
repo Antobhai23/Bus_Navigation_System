@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E53935"
+    tools:context=".UpdateActivity"
+    android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+
+
+    <Button
+        android:id="@+id/update_btn"
+        android:layout_width="220dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_button_colorpurple"
+        android:fontFamily="@font/atomic_age"
+        android:text="@string/update1"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_val_update" />
+
+    <EditText
+        android:id="@+id/busno_val_update"
+        android:layout_width="238dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="96dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:enabled="false"
+        android:fontFamily="@font/fondamento"
+
+        android:hint="@string/bus_no"
+        android:inputType="number"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/del_btn"
+        android:layout_width="220dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_button_colorpurple"
+        android:fontFamily="@font/atomic_age"
+        android:text="@string/delete1"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_btn" />
+
+    <EditText
+        android:id="@+id/source_up"
+        android:layout_width="238dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="96dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="@font/fondamento"
+        android:hint="@string/source1"
+        android:inputType="textNoSuggestions|textPersonName|textCapWords"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cont_val_update" />
+
+    <EditText
+        android:id="@+id/dest_up"
+        android:layout_width="238dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="96dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="@font/fondamento"
+        android:hint="@string/destination1"
+        android:inputType="textNoSuggestions|textPersonName|textCapWords"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/source_up" />
+
+    <EditText
+        android:id="@+id/name_val_update"
+        android:layout_width="238dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="96dp"
+        android:ems="10"
+        android:fontFamily="@font/fondamento"
+        android:hint="Name: "
+        android:inputType="textPersonName|textCapWords"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/busno_val_update" />
+
+    <EditText
+        android:id="@+id/cont_val_update"
+        android:layout_width="238dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="96dp"
+        android:ems="10"
+        android:fontFamily="@font/fondamento"
+        android:hint="Contact No:"
+        android:inputType="number"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_val_update" />
+
+    <EditText
+        android:id="@+id/reg_val_update"
+        android:layout_width="238dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="96dp"
+        android:ems="10"
+        android:fontFamily="@font/fondamento"
+        android:hint="Reg No:"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dest_up" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:minHeight="?attr/actionBarSize"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="1dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
